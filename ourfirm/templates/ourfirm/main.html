@@ -1,0 +1,50 @@
+{%extends "base.html"%}
+{%block navbar%}
+<li><a href="{% url 'home' %}"><b>Home</b></a></li>
+{%endblock navbar%}
+
+{%block content%}
+
+<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+   
+
+        {% load static %}
+        <img src="{% static "achievement.jpg" %}" width="100%" >
+        
+    </div>
+
+<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+    <br/><br/>
+    
+    {% include template_name %}
+    <p>Call today to talk to a lawyer at <a href="tel:+16474092741">(647) 409 2741.</a></p>
+        <div class="text-center">
+
+    <br /><br />
+    <div class="text-center">
+
+    <p2><b>Talk to a lawyer today</b></p2><br/><br/>
+    <form name="CallMeForm" method='POST'>
+        {% csrf_token %}
+        <label for='{{form.contact_name}}'><p>Name &nbsp;</p> </label>
+        {{form.contact_name}}
+
+        <label for='{{form.contact_phone}}'>
+            <p>Phone number &nbsp; </p>
+        </label>
+        {{form.contact_phone}} <br/><br/>
+        <input type="submit" class="btn btn-danger btn-lg submit" value="Talk to a Lawyer">
+    </form>
+    </div>
+</div>
+       
+
+
+       <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+
+   
+
+     </div>
+           
+           {% endblock content%}
+

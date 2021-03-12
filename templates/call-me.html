@@ -1,0 +1,22 @@
+<br /><br />
+<h1 class='orange'> Call Me </h1><br /><br />
+
+<p><b>Just leave your name and number and a lawyer will be in touch shortly</b></p> <br /><br />
+<form name="CallMeForm" method='POST'>
+    {% csrf_token %}
+
+
+
+    <label for='{{form.contact_name}}'><p>Name &nbsp</p> </label>
+    {{form.contact_name}}
+
+    <br /><br />
+
+    <label for='{{form.contact_phone}}'>
+        <p>Phone number &nbsp </p>
+    </label>
+    {{form.contact_phone}} <br />
+
+    <br /><br /><br />
+    <input type="submit" class="btn btn-danger btn-block btn-lg submit" value="Submit">
+    <br /><br />

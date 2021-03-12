@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+{%block navbar%}
+<li><a href="{% url 'home' %}"><b>Home</b></a></li>
+
+{%endblock navbar%}
+{%block content%}
+<div class="col-lg-3 col-md-3 hidden-sm hidden-xs" id="sidebar">
+    {%load static%}
+    <img src="{% static "call-me.jpg" %}" width=80%>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+
+    {% include template_name %}
+<div class="col-sm-2"></div>
+
+
+{%endblock content%}

@@ -1,0 +1,133 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+
+ 
+<div class="col-lg-10 col-lg-offset-1" >
+
+      <div class="row row-offcanvas row-offcanvas-right">
+          <div class="imagecontainer lg-12 md-12 hidden-sm hidden-xs">
+            <div class = "roundedcorners">
+            {% load static %}
+            <img src = "{% static "tim-gouw.jpg" %}" width = 100% >
+            </div>
+          </div>
+        </div>
+
+    <br />
+
+    <div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
+       
+        <h2 class="text-center">
+            <a href="{% url 'about' %}"><b> Learn about my practice</b></a>
+        </h2>
+        
+        <br/>
+        <p2><a href="{% url 'about' %}" class="btn btn-danger center-block" role="button">Charges Gone, Quickly, Affordably and Effectively</a></p2>
+        <br/>
+        <br/>
+
+    </div>
+
+          <br/><br/>
+    <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+        <h4>How Court Works</h4> 
+        <hr />
+        <ul><li>&#8226;<a href="{% url 'expect'%}">  What to expect in criminal court</a></li></ul>
+            <br />
+</div>
+
+    <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+        <h4>Impaired Driving</h4>
+        <hr/>
+        <ul><li>&#8226;<a href="{% url 'impaired'%}"> How to avoid a driving suspension for DUI</a></li>
+            <li>&#8226;<a href="{%url 'impairedwin'%}"> How to win a DUI charge</a></li>
+        </ul>
+    </div>
+    
+    <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+        <h4>Assault</h4>
+        <hr />
+        <ul class="text-center">
+            <li>&#8226;<a href="{% url 'assault'%}"> How to get an assualt charge dropped</a></li>
+            <li>&#8226;<a href="{% url 'assaultwin'%}"> How to win an Assault charge</a></li>
+        </ul>
+    </div>
+
+
+    <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+    <h4>Theft & Shoplifting</h4>
+        <hr/>
+        <ul>
+            <li>&#8226;<a href="{% url 'theft' %}"> How to get a theft charge dropped</a></li>
+            <li>&#8226;<a href="{% url 'theftwin' %}"> Winning a theft charge</a></li>
+        </ul>
+    </div>
+
+    <div class="col-lg-12 col-md-12hidden-sm hidden-xs">
+    <br/>
+</div>
+
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+            <h4>Fail to comply</h4>
+            <hr/>
+            <ul>
+                <li>&#8226;<a href="{% url 'failtocomply' %}"> How to get a fail to comply charge dropped</a></li>
+            </ul>
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+            <h4>Uttering threats </h4>
+            <hr />
+            <ul>
+                <li>&#8226;<a href="{% url 'utteringthreats' %}"> How to get rid of an unttering threats charge</a></li>
+               
+            </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+            <h4> Mischief</h4>
+            <hr />
+            <ul>
+                <li>&#8226;<a href="{% url 'mischief' %}"> How to get rid of a mischief charge</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+            <h4>How to win a trial</h4>
+            <hr />
+            <ul><li>&#8226;<a href="{% url 'fightthecharges' %}"> Arguing in court</li></a>
+                <li>&#8226;<a href="{% url 'evidence' %}"> Getting rid of evidence</li></a>
+                <li>&#8226;<a href="{% url 'delay' %}"> Delaying until dismissal</li></a>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-col-md-offset-3 hidden-sm hidden-xs" align="center">
+        <br/><p2><b>Your charges gone, quickly and affordably</b></p2>
+        <br /><br/>
+        <a href="{% url 'callme' %}" class="btn btn-danger center-block" role="button"><p2>Talk to a Lawyer Today</p2> </a></><br/><br/>
+        </div>
+
+<div class=" hidden-lg hidden-md col-sm-12 col-xs-12">
+ 
+<p2>    <a href="{% url 'about' %}" class="btn btn-danger center-block" role="button" data-toggle='modal'>My practice</a>
+    <br />
+    <a href="{% url 'impaired' %}" class="btn btn-primary center-block" role="button"> Impared Driving</a>
+    <br />
+    <a href="{% url 'assault' %}" class="btn btn-primary center-block" role="button">Assault</a>
+    <br />
+    <a href="{% url 'theft' %}" class="btn btn-primary center-block" role="button">Theft</a>
+    <br />
+    <a href="{% url 'failtocomply' %}" class="btn btn-primary center-block" role="button">Fail to Comply</a>
+    <br />
+    <a href="{% url 'mischief' %}" class="btn btn-primary center-block" role="button">Mischief</a>
+    <br />
+    <a href="{% url 'callme' %}" class="btn btn-danger center-block" role="button">Call Me</a></p2>
+
+</div>
+            {% endblock content %}

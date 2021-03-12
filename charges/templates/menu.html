@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br/><br/>
+
+<div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12"><h1 class="orange">How to Get Charges dropped</h1><br /><br /><br />
+    
+    </div>
+
+<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"> </div>
+
+    <div class="col-lg-10 col-md-10 hidden-sm hidden-xs">
+
+        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs" align="center">
+            <button type="button" class="btn btn-primary btn-block" data-toggle='collapse' data-target="#impaired" aria-expanded="true" aria-controls="impaired"><p2>Over 80 / Impaired Driving</p2></button>
+            <div class="collapse" id="impaired">
+                <ul>
+                    <li>&#8226;<a href="{% url 'impaired'%}"> How to avoid a driving suspension for DUI</a></li>
+                    <li>&#8226;<a href="{%url 'impairedwin'%}"> How to win a DUI charge</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs" align="center">
+            <button type="button" class="btn btn-primary btn-block" data-toggle='collapse' data-target="#assault" aria-expanded="true" aria-controls="assault"><p2>Assault</p2></button>
+            <div class="collapse" id="assault">
+                <ul class="text-center">
+                    <li>&#8226;<a href="{% url 'assault'%}"> How to get an assualt charge dropped</a></li>
+                    <li>&#8226;<a href="{% url 'assaultwin'%}"> How to win an Assault charge</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs" align="center">
+            <button type="button" class="btn btn-primary btn-block" data-toggle='collapse' data-target="#theft" aria-expanded="true" aria-controls="theft"><p2>Theft & Shoplifting</p2></button>
+            <div class="collapse" id="theft">
+                <ul>
+                    <li>&#8226;<a href="{% url 'theft' %}"> How to get a theft charge dropped</a></li>
+                    <li>&#8226;<a href="{% url 'theftwin' %}"> Winning a theft charge</a></li>
+                </ul>
+            </div>
+        </div>
+        <br/><br/><div class="col-lg-12 col-md-12 hidden-sm hidden-xs"><br/></div><br/><br/>
+        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs" align="center">
+            <a href="{% url 'failtocomply' %}" class="btn btn-primary btn-block"><p2>Fail to comply</p2></a>
+        </div>
+
+        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs" align="center">
+            <a href="{% url 'utteringthreats' %}" class="btn btn-primary btn-block"><p2>Uttering threats</p2> </a>
+        </div>
+
+        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs" align="center">
+            <a href="{% url  'mischief'%}" class="btn btn-primary btn-block"><p2>Mischief</p2></a>
+        </div>
+
+        <div class="col-lg-12 col-md-12 hidden-sm hidden-xs"><br/>
+            <a href="{% url 'about' %}" class="btn btn-danger btn-block"><p2>My practice</p2></a><br />
+        </div>
+    </div>
+
+    {# mobile start #}
+
+    <div class=" hidden-lg hidden-md col-sm-12 col-xs-12" align="center">
+       
+
+            <button type="button" class="btn btn-primary btn-block" data-toggle='collapse' data-target="#impairedm" aria-expanded="true" aria-controls="impairedm"><p2>Over 80 / Impaired Driving</p2></button>
+            <div class="collapse" id="impairedm">
+                <ul>
+                    <li><a href="{% url 'impaired'%}">How to avoid a driving suspension for DUI</a></li>
+                    <li><a href="{%url 'impairedwin'%}">How to win a DUI charge</a></li>
+                </ul>
+            </div>
+        <br/>
+            <button type="button" class="btn btn-primary btn-block" data-toggle='collapse' data-target="#assaultm" aria-expanded="true" aria-controls="assaultm"><p2>Assault</p2></button>
+            <div class="collapse" id="assaultm">
+                <ul class="text-center">
+                    <li><a href="{% url 'assault'%}">How to get an assualt charge dropped</a></li>
+                    <li><a href="{% url 'assaultwin'%}">How to win an Assault charge</a></li>
+                </ul>
+            </div>
+        <br/>
+            <button type="button" class="btn btn-primary btn-block" data-toggle='collapse' data-target="#theftm" aria-expanded="true" aria-controls="theftm"><p2>Theft & Shoplifting</p2></button>
+            <div class="collapse" id="theftm">
+                <ul>
+                    <li><a href="{% url 'theft' %}">How to get a theft charge dropped</a></li>
+                    <li><a href="{% url 'theftwin' %}">Winning a theft charge</a></li>
+                </ul>
+            </div>
+            <br/>
+            <a href="{% url 'failtocomply' %}" class="btn btn-primary btn-block"><p2>Fail to comply</p2></a>
+            <br/>
+            <a href="{% url 'utteringthreats' %}" class="btn btn-primary btn-block"><p2>Uttering threats</p2> </a>
+            <br/>
+            <a href="{% url  'mischief'%}" class="btn btn-primary btn-block"><p2>Mischief</p2></a>
+            <br/>
+        <a href="{% url 'about' %}" class="btn btn-danger btn-block"><p2>My practice</p2></a><br />
+
+
+
+      
+    </div>
+
+    {% endblock content %}

@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <title>The Law Office of Vivek David</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Merriweather+Sans|Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120168085-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120168085-2');
+    </script>
+
+
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width =100%;
+        }
+
+        .list-inline {
+            justify-content: center;
+        }
+
+        .btn {
+            font-family: 'Lato', sans-serif;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        .orange-background {
+            background-color: #FF851B;
+        }
+
+        .white {
+            color: white;
+        }
+
+        a {
+            color: #0074D9;
+        }
+
+        p {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.5em;
+            text-indent: 2em;
+        }
+
+        p2 {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.5em;
+        }
+
+        h4 {
+            font-family: 'Lato',sans-serif;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        li {
+            font-family: 'Lato' sans-serif;
+            font-size: 1.5em;
+            padding: .5em;
+        }
+
+        table {
+            font-family: 'Lato', sans-sherif;
+            font-size: 1.5em;
+        }
+
+        td {
+            padding-left: 1em;
+            padding-bottom: 1em;
+        }
+
+        h3 {
+            font-family: 'Open Sans', sans-serif;
+            text-indent: 2em;
+            font-weight: bold;
+            color: #FF4136;
+        }
+
+        h1 {
+            font-family: 'Lato', sans-serif;
+        }
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            text-indent: 1.5em;
+        }
+
+        p3 {
+            font-family: 'Lato', sans-serif;
+            color: white;
+            padding;
+        }
+
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.5em;
+                text-indent: none;
+            }
+        }
+
+        @media (min-width: 601px) {
+            h2 {
+                font-size: 2.5em;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+            p3 {
+                font-size: 1em;
+                text-indent: none;
+            }
+        }
+
+        @media (min-width: 601px) {
+            p3 {
+                font-size: 1.5em;
+            }
+        }
+
+
+        /* HACK:  */
+
+        ul li {
+            list-style: none;
+        }
+
+        ol li {
+            text-indent: 1em;
+        }
+
+        .orange {
+            color: #FF851B;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .red {
+            color: #FF4136;
+            text-indent: 5em;
+        }
+
+        .yellow {
+            color: #FFDC00;
+        }
+
+        .green {
+            color: #2ECC40;
+        }
+
+        .submit {
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            font-size: 1.5em;
+            background-color: #FF4136;
+            padding: .5em
+        }
+
+        .navbar-default {
+            background-color: black;
+            border-color: black;
+        }
+
+            .navbar-default .navbar-nav > li > a {
+                color: WHITE;
+            }
+
+        .navbar-header {
+        }
+
+        .navbar-default .navbar-brand {
+            color: white;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2em;
+        }
+
+
+            .navbar-default .navbar-brand:hover {
+                /*color:#0074D9;*/
+            }
+
+        .navbar-default .navbar-nav > li:hover > a:hover {
+            color: #0074D9
+        }
+
+
+        .navbar-nav > li {
+            padding-right: 1em;
+            margin-right: 1em;
+        }
+
+        #content {
+            padding: 12em;
+            clear: both;
+        }
+
+        @media (min-width: 600px) {
+            .navbar-brand {
+                font-size: 1em;
+                color: white;
+            }
+        }
+
+        @media (min-width: 800px) {
+            .navbar-brand {
+                font-size: 1.5em;
+                color: white;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+ 
+
+<h2>The Law Offices of Vivek David </h2>
+
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <div class="">
+              <p class="navbar-brand">647 409 2741</p>
+
+          
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>       
+
+        </div>
+        
+    </div>
+
+
+
+      <div class="navbar-collapse collapse">
+          <div class="pull-right">
+    <ul class="nav navbar-nav">
+        <li><a href="{% url 'home' %}"><b>Home</b></a></li>
+        <li><a href="{% url 'about' %}"><b>About</b></a></li>
+        <li><a href="{% url 'toc' %}"><b>Guide to Court</b></a></li>
+        <li><a href="{% url 'charges' %}"><b>Guide to Charges</b></a></li>
+        <li><a href="{% url 'callme' %}"><b>Call Me</b></a></li>
+</b>
+              </ul>
+          </div>
+        </div>
+      </div>
+      
+	
+
+</nav>
+
+<div class = "container-fluid">
+
+
+
+{% block content %}{% endblock content %}
+
+</div>
+</body>
